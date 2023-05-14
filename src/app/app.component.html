@@ -1,0 +1,5 @@
+<app-header (selection)="viewController($event)"></app-header>
+<div class="container">
+  <app-recipes *ngIf="recipeStatus"></app-recipes>
+  <app-shopping-list *ngIf="shoppingStatus"></app-shopping-list>
+</div>
